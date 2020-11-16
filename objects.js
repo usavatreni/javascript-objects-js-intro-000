@@ -1,7 +1,6 @@
-var playlist = {
- Tupac: "All Eyez On Me"
-};
+var playlist = {Tupac: "All Eyez On Me"};
 
 function updatePlaylist(playlist, artistName, songTitle ) {
-  return Object.assign({}, playlist, { [artistName]: songTitle })
+  playlist.artistname = songTitle
+  return playlist;
 }
